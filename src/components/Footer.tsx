@@ -42,7 +42,54 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg">Contact</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-3 text-sm text-secondary-foreground/80">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <a 
+                  href="https://maps.app.goo.gl/FtpTLNp534o2Lxmk8" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-secondary-foreground transition-colors cursor-pointer"
+                  title="Open in Google Maps"
+                >
+                  410, 4th Floor, 5th Main Rd, above Polar Bear, HRBR Layout 2nd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 text-sm text-secondary-foreground/80">
+                <Phone className="h-4 w-4 flex-shrink-0" />
+                <div className="flex flex-col space-y-1">
+                  <a 
+                    href="tel:+916361580705" 
+                    className="hover:text-secondary-foreground transition-colors cursor-pointer"
+                    title="Call us"
+                  >
+                    +91 63615 80705
+                  </a>
+                  <a 
+                    href="https://wa.me/916361580705" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs text-secondary-foreground/60 hover:text-secondary-foreground transition-colors cursor-pointer"
+                    title="WhatsApp us"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-center space-x-3 text-sm text-secondary-foreground/80">
+                <Mail className="h-4 w-4 flex-shrink-0" />
+                <a 
+                  href="mailto:svahastha@gmail.com" 
+                  className="hover:text-secondary-foreground transition-colors cursor-pointer"
+                  title="Send us an email"
+                >
+                  svahastha@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
 
           {/* Social */}
           <div className="space-y-4">
