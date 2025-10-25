@@ -42,30 +42,14 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-lg">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-3 text-sm text-secondary-foreground/80">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>123 Studio Lane, Creative District</span>
-              </li>
-              <li className="flex items-center space-x-3 text-sm text-secondary-foreground/80">
-                <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>+91 98765 43210</span>
-              </li>
-              <li className="flex items-center space-x-3 text-sm text-secondary-foreground/80">
-                <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>hello@svahastha.studio</span>
-              </li>
-            </ul>
-          </div>
+
 
           {/* Social */}
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Follow Us</h4>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/svahastha?igsh=MWQwa3dwczRzdXJtOA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-secondary-foreground/10 hover:bg-secondary-foreground/20 transition-colors"
@@ -74,7 +58,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1BayoAcvSG/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-secondary-foreground/10 hover:bg-secondary-foreground/20 transition-colors"

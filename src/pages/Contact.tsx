@@ -107,10 +107,15 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
-                      <p className="text-muted-foreground">
-                        123 Studio Lane, Creative District<br />
-                        Mumbai, Maharashtra 400001
-                      </p>
+                      <a 
+                        href="https://maps.app.goo.gl/FtpTLNp534o2Lxmk8" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                        title="Open in Google Maps"
+                      >
+                        410, 4th Floor, 5th Main Rd, above Polar Bear, HRBR Layout 2nd Block, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -122,10 +127,24 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+91 98765 43210</p>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        WhatsApp available
-                      </p>
+                      <div className="space-y-1">
+                        <a 
+                          href="tel:+916361580705" 
+                          className="text-muted-foreground hover:text-primary transition-colors cursor-pointer block"
+                          title="Call us"
+                        >
+                          +91 63615 80705
+                        </a>
+                        <a 
+                          href="https://wa.me/916361580705" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-sm text-primary hover:text-primary/80 transition-colors cursor-pointer"
+                          title="WhatsApp us"
+                        >
+                          WhatsApp us
+                        </a>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -137,7 +156,13 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">hello@svahastha.studio</p>
+                      <a 
+                        href="mailto:svahastha@gmail.com" 
+                        className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                        title="Send us an email"
+                      >
+                        svahastha@gmail.com
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
