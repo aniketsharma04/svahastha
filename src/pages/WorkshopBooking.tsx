@@ -11,53 +11,137 @@ import { cn } from "@/lib/utils";
 
 // Workshop data - in a real app, this would come from an API
 const workshopData = {
-  "beginners-pottery-journey": {
-    id: "beginners-pottery-journey",
-    title: "Beginner's Pottery Journey",
+  "hand-building-pottery-course": {
+    id: "hand-building-pottery-course",
+    title: "Hand-Building Pottery Course",
     level: "Beginner",
-    duration: "4 weeks",
-    schedule: "Saturdays, 10:00 AM - 1:00 PM",
-    startDate: "April 15, 2025",
-    price: "₹8,500",
-    capacity: "8 students",
+    duration: "4-6 sessions",
+    schedule: "Flexible timings",
+    startDate: "Contact for availability",
+    price: "Contact for pricing",
+    capacity: "Small groups",
     rating: 4.9,
     reviews: 24,
-    description: "Perfect for absolute beginners. Learn wheel throwing basics, hand-building techniques, and glazing. Create functional pieces like bowls, mugs, and plates while developing fundamental pottery skills.",
-    includes: ["All materials & tools", "Clay & glazing supplies", "Firing services", "Take-home pieces"],
-    instructor: "Anjali Deshmukh",
-    location: "Main Studio",
+    description: "Discover the art of hand-building - one of the oldest and most intuitive ways to create pottery. Learn pinching, coiling, and slab building techniques while connecting with the material and shaping something uniquely yours.",
+    includes: ["All materials & tools", "Clay & firing costs", "Take-home pieces", "Personal guidance"],
+    instructor: "Svahastha Team",
+    location: "Svahastha Pottery Studio",
     featured: true,
     availableDates: [
       { date: "2024-12-21", time: "10:00 AM - 1:00 PM", spots: 3 },
       { date: "2024-12-28", time: "10:00 AM - 1:00 PM", spots: 5 },
       { date: "2025-01-04", time: "10:00 AM - 1:00 PM", spots: 7 },
       { date: "2025-01-11", time: "10:00 AM - 1:00 PM", spots: 8 },
-      { date: "2025-01-18", time: "10:00 AM - 1:00 PM", spots: 6 },
-      { date: "2025-01-25", time: "10:00 AM - 1:00 PM", spots: 4 },
     ]
   },
-  "mindful-clay-experience": {
-    id: "mindful-clay-experience",
-    title: "Mindful Clay Experience",
-    level: "All Levels",
-    duration: "6 weeks",
-    schedule: "Sundays, 3:00 PM - 5:00 PM",
-    startDate: "May 1, 2025",
-    price: "₹12,000",
-    capacity: "6 students",
+  "wheel-throwing-pottery-course": {
+    id: "wheel-throwing-pottery-course",
+    title: "Wheel Throwing Pottery Course",
+    level: "Beginner",
+    duration: "4 weeks (8 sessions + 4 practice)",
+    schedule: "April 4-26, Thu-Fri, 2-4:30pm",
+    startDate: "April 4, 2025",
+    price: "₹11,200",
+    capacity: "Limited seats",
     rating: 4.8,
     reviews: 18,
-    description: "A unique workshop combining meditation and pottery. Begin each session with guided mindfulness practice, then explore clay as a meditative medium. Create intuitive, expressive pieces while cultivating presence and calm.",
-    includes: ["Meditation guidance", "All materials", "Private studio time", "Mindfulness journal"],
-    instructor: "Anjali Deshmukh",
-    location: "Meditation Studio",
+    description: "Master the art of the potter's wheel. Learn clay wedging, centering, throwing cylinders, trimming, and glazing. Includes personal toolkit, 10kg clay, and dedicated shelf space.",
+    includes: ["Personal toolkit (take home)", "10kg stoneware clay", "Dedicated shelf space", "8 guided + 4 practice sessions"],
+    instructor: "Svahastha Team",
+    location: "Svahastha Pottery Studio",
     featured: true,
     availableDates: [
-      { date: "2024-12-22", time: "3:00 PM - 5:00 PM", spots: 2 },
-      { date: "2024-12-29", time: "3:00 PM - 5:00 PM", spots: 4 },
-      { date: "2025-01-05", time: "3:00 PM - 5:00 PM", spots: 6 },
-      { date: "2025-01-12", time: "3:00 PM - 5:00 PM", spots: 3 },
-      { date: "2025-01-19", time: "3:00 PM - 5:00 PM", spots: 5 },
+      { date: "2025-04-04", time: "2:00 PM - 4:30 PM", spots: 2 },
+      { date: "2025-04-05", time: "2:00 PM - 4:30 PM", spots: 4 },
+      { date: "2025-04-11", time: "2:00 PM - 4:30 PM", spots: 6 },
+    ]
+  },
+  "wheel-fun-pottery-workshop": {
+    id: "wheel-fun-pottery-workshop",
+    title: "Wheel Fun Pottery Workshop",
+    level: "All Levels",
+    duration: "2.5 hours",
+    schedule: "11:00 AM-1:30 PM, 2:00-4:30 PM, 5:00-7:30 PM",
+    startDate: "Multiple dates",
+    price: "₹2,200 (Individual) / ₹3,600 (Two people)",
+    capacity: "Limited slots",
+    rating: 4.9,
+    reviews: 45,
+    description: "Experience the magic of the potter's wheel! Our bestseller workshop lets you try wheel throwing in a relaxed, fun setting. No experience needed - just bring your curiosity and sense of play.",
+    includes: ["Hands-on wheel throwing", "Live demonstration", "High-quality stoneware clay", "Take home your piece"],
+    instructor: "Svahastha Team",
+    location: "Svahastha Pottery Studio",
+    featured: true,
+    availableDates: [
+      { date: "2024-12-22", time: "11:00 AM - 1:30 PM", spots: 2 },
+      { date: "2024-12-22", time: "2:00 PM - 4:30 PM", spots: 4 },
+      { date: "2024-12-22", time: "5:00 PM - 7:30 PM", spots: 6 },
+      { date: "2024-12-29", time: "11:00 AM - 1:30 PM", spots: 3 },
+      { date: "2024-12-29", time: "2:00 PM - 4:30 PM", spots: 5 },
+    ]
+  },
+  "ceramic-painting-workshop": {
+    id: "ceramic-painting-workshop",
+    title: "Ceramic Painting Workshop",
+    level: "All Levels",
+    duration: "2-3 hours",
+    schedule: "Flexible timings",
+    startDate: "Contact for availability",
+    price: "₹1,150 (Single) / ₹2,100 (Couple)",
+    capacity: "Walk-in friendly",
+    rating: 4.6,
+    reviews: 28,
+    description: "Turn plain ceramics into stunning works of art! Paint your own ceramic pieces with studio-grade underglazes. Perfect for families, friends, or solo creative time.",
+    includes: ["Studio-grade underglazes", "Brushes & materials", "Table space & guidance", "Firing services"],
+    instructor: "Svahastha Team",
+    location: "Svahastha Pottery Studio",
+    featured: false,
+    availableDates: [
+      { date: "2024-12-23", time: "11:00 AM - 2:00 PM", spots: 8 },
+      { date: "2024-12-30", time: "11:00 AM - 2:00 PM", spots: 6 },
+      { date: "2025-01-06", time: "11:00 AM - 2:00 PM", spots: 10 },
+    ]
+  },
+  "glaze-application-course": {
+    id: "glaze-application-course",
+    title: "Glaze Application Course",
+    level: "All Levels",
+    duration: "Intensive sessions",
+    schedule: "Contact for schedule",
+    startDate: "Contact for availability",
+    price: "₹9,400",
+    capacity: "Limited seats",
+    rating: 4.7,
+    reviews: 12,
+    description: "Master the art of glazing! Learn glaze formulas, mixing, application methods, and troubleshooting. Create 6 finished, food-safe pieces to take home.",
+    includes: ["All materials provided", "6 finished pieces", "N95 mask & apron", "Firing services"],
+    instructor: "Svahastha Team",
+    location: "Svahastha Pottery Studio",
+    featured: false,
+    availableDates: [
+      { date: "2025-01-15", time: "10:00 AM - 5:00 PM", spots: 3 },
+      { date: "2025-01-22", time: "10:00 AM - 5:00 PM", spots: 5 },
+    ]
+  },
+  "glow-in-the-dark-pottery": {
+    id: "glow-in-the-dark-pottery",
+    title: "Glow-in-the-Dark Pottery Workshop",
+    level: "All Levels",
+    duration: "3 hours",
+    schedule: "Contact for schedule",
+    startDate: "Contact for availability",
+    price: "Contact for pricing",
+    capacity: "Limited seats",
+    rating: 4.8,
+    reviews: 15,
+    description: "Create pottery that shines in the dark! This unique workshop blends creativity with magic, allowing you to craft shapes that illuminate. A one-of-a-kind experience filled with awe.",
+    includes: ["All materials provided", "Glow-in-the-dark clay", "Creative guidance", "Unique experience"],
+    instructor: "Svahastha Team",
+    location: "Svahastha Pottery Studio",
+    featured: false,
+    availableDates: [
+      { date: "2025-01-20", time: "10:00 AM - 1:00 PM", spots: 4 },
+      { date: "2025-01-27", time: "10:00 AM - 1:00 PM", spots: 6 },
     ]
   }
 };
@@ -122,17 +206,24 @@ const WorkshopBooking = () => {
   const handleBooking = () => {
     if (selectedDate && selectedTimeSlot) {
       // In a real app, this would submit to a booking API
-      alert(`Booking confirmed for ${workshop.title} on ${format(selectedDate, 'PPP')} at ${selectedTimeSlot}`);
+      const message = `Hi! I'd like to book ${workshop.title} on ${format(selectedDate, 'PPP')} at ${selectedTimeSlot}. Please confirm availability.`;
+      const whatsappUrl = `https://wa.me/916361580705?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
     }
   };
 
   return (
-    <div className="pt-20 min-h-screen">
-      {/* Header */}
-      <section className="section-padding bg-accent/30">
-        <div className="container-custom">
-          <div className="flex items-center space-x-4 mb-6">
-            <Button variant="ghost" size="sm" asChild>
+    <div className="pt-20 min-h-screen bg-gradient-to-b from-background to-accent/5">
+      {/* Enhanced Header */}
+      <section className="section-padding bg-gradient-to-br from-primary/5 via-accent/10 to-background relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent" />
+        <div className="absolute top-10 right-10 w-32 h-32 rounded-full bg-primary/10 animate-pulse" />
+        <div className="absolute bottom-10 left-10 w-20 h-20 rounded-full bg-accent/20 animate-pulse" style={{ animationDelay: '1s' }} />
+        
+        <div className="container-custom relative z-10">
+          <div className="flex items-center space-x-4 mb-8">
+            <Button variant="ghost" size="sm" asChild className="hover:bg-primary/10 transition-colors">
               <Link to="/workshops" className="flex items-center">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Workshops
@@ -141,125 +232,150 @@ const WorkshopBooking = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Workshop Info */}
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-2">
-                  <Badge className={getLevelColor(workshop.level)}>
+            {/* Enhanced Workshop Info */}
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-background to-accent/5 rounded-2xl p-8 shadow-lg border border-primary/10">
+                <div className="flex items-center space-x-4 mb-6">
+                  <Badge className={`${getLevelColor(workshop.level)} border-0 shadow-sm text-sm px-3 py-1`}>
                     {workshop.level}
                   </Badge>
                   {workshop.featured && (
-                    <Badge className="bg-primary text-primary-foreground">
+                    <Badge className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground border-0 shadow-sm">
                       <Star className="h-3 w-3 mr-1" />
                       Featured
                     </Badge>
                   )}
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-heading font-bold">
+                <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent leading-tight">
                   {workshop.title}
                 </h1>
 
-                <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                  <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="font-medium">{workshop.rating}</span>
-                    <span>({workshop.reviews} reviews)</span>
+                <div className="flex items-center space-x-8 text-muted-foreground mb-8">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Star className="h-4 w-4 text-primary" />
+                    </div>
+                    <span className="font-semibold">{workshop.rating} ({workshop.reviews} reviews)</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <MapPin className="h-4 w-4" />
-                    <span>{workshop.location}</span>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center">
+                      <MapPin className="h-4 w-4 text-accent-foreground" />
+                    </div>
+                    <span className="font-medium">{workshop.location}</span>
                   </div>
-                  <div className="flex items-center space-x-1">
-                    <Award className="h-4 w-4" />
-                    <span>{workshop.instructor}</span>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Award className="h-4 w-4 text-primary" />
+                    </div>
+                    <span className="font-medium">{workshop.instructor}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl font-heading font-semibold">About This Workshop</h3>
-                <p className="text-muted-foreground leading-relaxed">
+              <div className="bg-gradient-to-br from-background to-accent/5 rounded-2xl p-8 shadow-lg border border-primary/10">
+                <h3 className="text-2xl font-heading font-bold mb-4 text-foreground">About This Workshop</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   {workshop.description}
                 </p>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl font-heading font-semibold flex items-center">
-                  <Heart className="h-5 w-5 mr-2 text-primary" />
+              <div className="bg-gradient-to-br from-primary/5 to-accent/10 rounded-2xl p-8 border border-primary/10 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold mb-6 flex items-center text-foreground">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                    <Heart className="h-4 w-4 text-primary" />
+                  </div>
                   What's Included
                 </h3>
-                <ul className="space-y-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {workshop.includes.map((item, i) => (
-                    <li key={i} className="flex items-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
+                    <div key={i} className="flex items-center space-x-4 p-4 rounded-lg bg-background/50">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                      <span className="font-medium text-foreground">{item}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="flex items-center space-x-2">
-                  <Clock className="h-4 w-4 text-primary" />
-                  <div>
-                    <span className="font-medium">Duration</span>
-                    <p className="text-muted-foreground">{workshop.duration}</p>
+              <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-2xl p-8 border border-accent/20 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold mb-6 text-foreground">Workshop Details</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Clock className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground">Duration</span>
+                      <p className="text-muted-foreground">{workshop.duration}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Users className="h-4 w-4 text-primary" />
-                  <div>
-                    <span className="font-medium">Capacity</span>
-                    <p className="text-muted-foreground">{workshop.capacity}</p>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                      <Users className="h-5 w-5 text-accent-foreground" />
+                    </div>
+                    <div>
+                      <span className="font-semibold text-foreground">Capacity</span>
+                      <p className="text-muted-foreground">{workshop.capacity}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Booking Section */}
+            {/* Enhanced Booking Section */}
             <div className="space-y-6">
-              <Card className="sticky top-24">
-                <CardHeader>
+              <Card className="sticky top-24 bg-gradient-to-br from-background to-accent/5 border-0 shadow-2xl">
+                <CardHeader className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-t-lg">
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-2xl font-heading">Book Your Spot</CardTitle>
+                      <CardTitle className="text-2xl font-heading text-foreground">Book Your Spot</CardTitle>
                       <p className="text-muted-foreground">Choose your preferred date and time</p>
                     </div>
                     <div className="text-right">
-                      <span className="text-3xl font-heading font-bold text-primary">
+                      <span className="text-4xl font-heading font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
                         {workshop.price}
                       </span>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="space-y-6">
-                  {/* Instructions */}
-                  <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
-                    <p className="text-sm text-blue-800">
-                      <strong>How to book:</strong> First select a date, then choose your preferred time slot, and finally complete your booking.
+                <CardContent className="space-y-8 p-8">
+                  {/* Enhanced Instructions */}
+                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 border border-primary/20">
+                    <h4 className="text-lg font-semibold mb-3 text-foreground flex items-center">
+                      <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                        <Star className="h-3 w-3 text-primary" />
+                      </div>
+                      How to Book
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      <strong>Step-by-step process:</strong> First select a date, then choose your preferred time slot, and finally complete your booking. You'll receive instant confirmation via WhatsApp.
                     </p>
                   </div>
 
-                  {/* Date Selection */}
-                  <div className="space-y-3">
-                    <label className="text-sm font-medium">Step 1: Select Date</label>
-                    <div className="space-y-2">
-                      {/* Simple date buttons as fallback */}
-                      <div className="grid grid-cols-1 gap-2">
+                  {/* Enhanced Date Selection */}
+                  <div className="space-y-4">
+                    <h4 className="text-lg font-semibold flex items-center text-foreground">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <Calendar className="h-4 w-4 text-primary" />
+                      </div>
+                      Step 1: Select Date
+                    </h4>
+                    <div className="space-y-4">
+                      {/* Enhanced date buttons */}
+                      <div className="grid grid-cols-1 gap-3">
                         {workshop.availableDates.map((slot, index) => {
                           const slotDate = new Date(slot.date);
                           return (
                             <Button
                               key={index}
                               variant={selectedDate?.toISOString().split('T')[0] === slot.date ? "default" : "outline"}
-                              className="w-full justify-between"
+                              className="w-full justify-between h-12 hover:shadow-md transition-all"
                               onClick={() => {
                                 setSelectedDate(slotDate);
                                 setSelectedTimeSlot("");
                               }}
                             >
-                              <span>{format(slotDate, "PPP")}</span>
+                              <span className="font-medium">{format(slotDate, "PPP")}</span>
                               <span className="text-sm text-muted-foreground">
                                 {slot.spots} spots
                               </span>
@@ -268,20 +384,19 @@ const WorkshopBooking = () => {
                         })}
                       </div>
                       
-                      {/* Calendar picker */}
-                      <div className="pt-2 border-t">
+                      {/* Enhanced Calendar picker */}
+                      <div className="pt-4 border-t border-primary/10">
                         <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
                           <PopoverTrigger asChild>
                             <Button
-                              variant="ghost"
-                              size="sm"
-                              className="w-full"
+                              variant="outline"
+                              className="w-full h-12 border-2 hover:border-primary/50 transition-colors"
                             >
                               <Calendar className="mr-2 h-4 w-4" />
                               Use Calendar
                             </Button>
                           </PopoverTrigger>
-                          <PopoverContent className="w-auto p-0" align="start">
+                          <PopoverContent className="w-auto p-0 shadow-2xl" align="start">
                             <div className="p-3">
                               <CalendarComponent
                                 mode="single"
@@ -303,11 +418,16 @@ const WorkshopBooking = () => {
                     </div>
                   </div>
 
-                  {/* Time Slot Selection */}
+                  {/* Enhanced Time Slot Selection */}
                   {selectedDate && (
-                    <div className="space-y-3">
-                      <label className="text-sm font-medium">Step 2: Choose Time</label>
-                      <div className="space-y-2">
+                    <div className="space-y-4">
+                      <h4 className="text-lg font-semibold flex items-center text-foreground">
+                        <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center mr-3">
+                          <Clock className="h-4 w-4 text-accent-foreground" />
+                        </div>
+                        Step 2: Choose Time
+                      </h4>
+                      <div className="space-y-3">
                         {(() => {
                           const selectedDateStr = selectedDate.toISOString().split('T')[0];
                           const availableSlots = workshop.availableDates.filter(
@@ -316,9 +436,9 @@ const WorkshopBooking = () => {
                           
                           if (availableSlots.length === 0) {
                             return (
-                              <div className="text-center py-4 text-muted-foreground">
-                                <p>No available time slots for this date.</p>
-                                <p className="text-sm">Please select a different date.</p>
+                              <div className="bg-accent/10 rounded-lg p-6 text-center">
+                                <p className="text-muted-foreground mb-2">No available time slots for this date.</p>
+                                <p className="text-sm text-muted-foreground">Please select a different date.</p>
                               </div>
                             );
                           }
@@ -327,10 +447,13 @@ const WorkshopBooking = () => {
                             <Button
                               key={index}
                               variant={selectedTimeSlot === slot.time ? "default" : "outline"}
-                              className="w-full justify-between"
+                              className="w-full justify-between h-14 hover:shadow-md transition-all"
                               onClick={() => setSelectedTimeSlot(slot.time)}
                             >
-                              <span>{slot.time}</span>
+                              <div className="flex items-center">
+                                <Clock className="mr-3 h-4 w-4" />
+                                <span className="font-medium">{slot.time}</span>
+                              </div>
                               <span className="text-sm text-muted-foreground">
                                 {slot.spots} spots left
                               </span>
@@ -341,32 +464,63 @@ const WorkshopBooking = () => {
                     </div>
                   )}
 
-                  {/* Booking Summary */}
+                  {/* Enhanced Booking Summary */}
                   {selectedDate && selectedTimeSlot && (
-                    <div className="p-4 bg-green-50 border border-green-200 rounded-lg space-y-2">
-                      <h4 className="font-semibold text-green-800">Step 3: Review & Book</h4>
-                      <div className="text-sm text-muted-foreground space-y-1">
-                        <p><strong>Workshop:</strong> {workshop.title}</p>
-                        <p><strong>Date:</strong> {format(selectedDate, "PPP")}</p>
-                        <p><strong>Time:</strong> {selectedTimeSlot}</p>
-                        <p><strong>Price:</strong> {workshop.price}</p>
+                    <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 border border-primary/20">
+                      <h4 className="text-lg font-semibold mb-4 text-foreground flex items-center">
+                        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                          <CheckCircle className="h-4 w-4 text-primary" />
+                        </div>
+                        Step 3: Review & Book
+                      </h4>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex justify-between items-center">
+                          <span className="text-muted-foreground">Workshop:</span>
+                          <span className="font-medium text-foreground">{workshop.title}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-muted-foreground">Date:</span>
+                          <span className="font-medium text-foreground">{format(selectedDate, "PPP")}</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-muted-foreground">Time:</span>
+                          <span className="font-medium text-foreground">{selectedTimeSlot}</span>
+                        </div>
+                        <div className="flex justify-between items-center pt-2 border-t border-primary/20">
+                          <span className="text-muted-foreground">Price:</span>
+                          <span className="font-bold text-primary text-lg">{workshop.price}</span>
+                        </div>
                       </div>
                     </div>
                   )}
 
-                  {/* Book Button */}
-                  <Button 
-                    className="w-full" 
-                    size="lg"
-                    onClick={handleBooking}
-                    disabled={!selectedDate || !selectedTimeSlot}
-                  >
-                    {selectedDate && selectedTimeSlot ? 'Complete Booking' : 'Select Date & Time'}
-                  </Button>
+                  {/* Enhanced Book Button */}
+                  {workshop.availableDates.length > 0 ? (
+                    <Button 
+                      className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-lg hover:shadow-xl transition-all duration-300" 
+                      onClick={handleBooking}
+                      disabled={!selectedDate || !selectedTimeSlot}
+                    >
+                      {selectedDate && selectedTimeSlot ? 'Complete Booking' : 'Select Date & Time'}
+                    </Button>
+                  ) : (
+                    <Button 
+                      className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent shadow-lg hover:shadow-xl transition-all duration-300"
+                      onClick={() => {
+                        const message = `Hi! I'm interested in booking ${workshop.title}. Please let me know about availability and pricing.`;
+                        const whatsappUrl = `https://wa.me/916361580705?text=${encodeURIComponent(message)}`;
+                        window.open(whatsappUrl, '_blank');
+                      }}
+                    >
+                      Contact for Booking
+                    </Button>
+                  )}
 
-                  <p className="text-xs text-muted-foreground text-center">
-                    Secure payment processing • Free cancellation up to 24 hours before
-                  </p>
+                  <div className="bg-accent/10 rounded-lg p-4 text-center">
+                    <p className="text-xs text-muted-foreground">
+                      🔒 Secure booking • 📱 WhatsApp confirmation • 🆓 Free cancellation up to 24 hours before
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </div>

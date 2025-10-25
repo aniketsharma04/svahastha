@@ -8,106 +8,137 @@ import workshopImage from "@/assets/workshop-hands.jpg";
 const Workshops = () => {
   const workshops = [
     {
-      id: "beginners-pottery-journey",
-      title: "Beginner's Pottery Journey",
+      id: "hand-building-pottery-course",
+      title: "Hand-Building Pottery Course",
       level: "Beginner",
-      duration: "4 weeks",
-      schedule: "Saturdays, 10:00 AM - 1:00 PM",
-      startDate: "April 15, 2025",
-      price: "₹8,500",
-      capacity: "8 students",
+      duration: "4-6 sessions",
+      schedule: "Flexible timings",
+      startDate: "Contact for availability",
+      price: "Contact for pricing",
+      capacity: "Small groups",
       rating: 4.9,
       reviews: 24,
-      description: "Perfect for absolute beginners. Learn wheel throwing basics, hand-building techniques, and glazing. Create functional pieces like bowls, mugs, and plates while developing fundamental pottery skills.",
-      includes: ["All materials & tools", "Clay & glazing supplies", "Firing services", "Take-home pieces"],
-      instructor: "Anjali Deshmukh",
-      location: "Main Studio",
+      description: "Discover the art of hand-building - one of the oldest and most intuitive ways to create pottery. Learn pinching, coiling, and slab building techniques while connecting with the material and shaping something uniquely yours.",
+      includes: ["All materials & tools", "Clay & firing costs", "Take-home pieces", "Personal guidance"],
+      instructor: "Svahastha Team",
+      location: "Svahastha Pottery Studio",
       featured: true,
+      availableDates: [
+        { date: "2024-12-21", time: "10:00 AM - 1:00 PM", spots: 3 },
+        { date: "2024-12-28", time: "10:00 AM - 1:00 PM", spots: 5 },
+        { date: "2025-01-04", time: "10:00 AM - 1:00 PM", spots: 7 },
+        { date: "2025-01-11", time: "10:00 AM - 1:00 PM", spots: 8 },
+      ]
     },
     {
-      id: "mindful-clay-experience",
-      title: "Mindful Clay Experience",
-      level: "All Levels",
-      duration: "6 weeks",
-      schedule: "Sundays, 3:00 PM - 5:00 PM",
-      startDate: "May 1, 2025",
-      price: "₹12,000",
-      capacity: "6 students",
+      id: "wheel-throwing-pottery-course",
+      title: "Wheel Throwing Pottery Course",
+      level: "Beginner",
+      duration: "4 weeks (8 sessions + 4 practice)",
+      schedule: "April 4-26, Thu-Fri, 2-4:30pm",
+      startDate: "April 4, 2025",
+      price: "₹11,200",
+      capacity: "Limited seats",
       rating: 4.8,
       reviews: 18,
-      description: "A unique workshop combining meditation and pottery. Begin each session with guided mindfulness practice, then explore clay as a meditative medium. Create intuitive, expressive pieces while cultivating presence and calm.",
-      includes: ["Meditation guidance", "All materials", "Private studio time", "Mindfulness journal"],
-      instructor: "Anjali Deshmukh",
-      location: "Meditation Studio",
+      description: "Master the art of the potter's wheel. Learn clay wedging, centering, throwing cylinders, trimming, and glazing. Includes personal toolkit, 10kg clay, and dedicated shelf space.",
+      includes: ["Personal toolkit (take home)", "10kg stoneware clay", "Dedicated shelf space", "8 guided + 4 practice sessions"],
+      instructor: "Svahastha Team",
+      location: "Svahastha Pottery Studio",
       featured: true,
+      availableDates: [
+        { date: "2025-04-04", time: "2:00 PM - 4:30 PM", spots: 2 },
+        { date: "2025-04-05", time: "2:00 PM - 4:30 PM", spots: 4 },
+        { date: "2025-04-11", time: "2:00 PM - 4:30 PM", spots: 6 },
+      ]
     },
     {
-      id: "advanced-glazing-techniques",
-      title: "Advanced Glazing Techniques",
-      level: "Intermediate",
-      duration: "3 weeks",
-      schedule: "Fridays, 6:00 PM - 9:00 PM",
-      startDate: "April 22, 2025",
-      price: "₹9,500",
-      capacity: "6 students",
+      id: "glaze-application-course",
+      title: "Glaze Application Course",
+      level: "All Levels",
+      duration: "Intensive sessions",
+      schedule: "Contact for schedule",
+      startDate: "Contact for availability",
+      price: "₹9,400",
+      capacity: "Limited seats",
       rating: 4.7,
       reviews: 12,
-      description: "Master the art of ceramic glazing. Learn glaze chemistry, layering techniques, firing methods, and surface decoration. Perfect for potters ready to elevate their finishing techniques.",
-      includes: ["Glaze recipes", "Test tiles", "Multiple firings", "Reference materials"],
-      instructor: "Raj Patel",
-      location: "Glazing Lab",
+      description: "Master the art of glazing! Learn glaze formulas, mixing, application methods, and troubleshooting. Create 6 finished, food-safe pieces to take home.",
+      includes: ["All materials provided", "6 finished pieces", "N95 mask & apron", "Firing services"],
+      instructor: "Svahastha Team",
+      location: "Svahastha Pottery Studio",
       featured: false,
+      availableDates: [
+        { date: "2025-01-15", time: "10:00 AM - 5:00 PM", spots: 3 },
+        { date: "2025-01-22", time: "10:00 AM - 5:00 PM", spots: 5 },
+      ]
     },
     {
-      id: "wheel-throwing-intensive",
-      title: "Wheel Throwing Intensive",
-      level: "Intermediate",
-      duration: "2 weeks",
-      schedule: "Monday & Wednesday, 7:00 PM - 9:30 PM",
-      startDate: "May 10, 2025",
-      price: "₹7,000",
-      capacity: "5 students",
-      rating: 4.9,
-      reviews: 15,
-      description: "Accelerated wheel throwing for those with basic experience. Focus on centering, pulling walls, shaping, and creating consistent forms. Build speed, precision, and confidence at the wheel.",
-      includes: ["Extended practice time", "Personal feedback", "Video analysis", "Clay package"],
-      instructor: "Priya Sharma",
-      location: "Wheel Studio",
-      featured: false,
-    },
-    {
-      id: "sculptural-pottery",
-      title: "Sculptural Pottery",
+      id: "wheel-fun-pottery-workshop",
+      title: "Wheel Fun Pottery Workshop",
       level: "All Levels",
-      duration: "5 weeks",
-      schedule: "Thursdays, 4:00 PM - 7:00 PM",
-      startDate: "April 28, 2025",
-      price: "₹11,000",
-      capacity: "7 students",
-      rating: 4.6,
-      reviews: 20,
-      description: "Explore pottery as sculpture. Move beyond functional forms to create expressive, artistic pieces. Learn coiling, slab building, and organic shaping while developing your unique artistic voice.",
-      includes: ["Diverse materials", "Texture tools", "Surface treatments", "Gallery showcase"],
-      instructor: "Anjali Deshmukh",
-      location: "Sculpture Studio",
-      featured: false,
+      duration: "2.5 hours",
+      schedule: "11:00 AM-1:30 PM, 2:00-4:30 PM, 5:00-7:30 PM",
+      startDate: "Multiple dates",
+      price: "₹2,200 (Individual) / ₹3,600 (Two people)",
+      capacity: "Limited slots",
+      rating: 4.9,
+      reviews: 45,
+      description: "Experience the magic of the potter's wheel! Our bestseller workshop lets you try wheel throwing in a relaxed, fun setting. No experience needed - just bring your curiosity and sense of play.",
+      includes: ["Hands-on wheel throwing", "Live demonstration", "High-quality stoneware clay", "Take home your piece"],
+      instructor: "Svahastha Team",
+      location: "Svahastha Pottery Studio",
+      featured: true,
+      availableDates: [
+        { date: "2024-12-22", time: "11:00 AM - 1:30 PM", spots: 2 },
+        { date: "2024-12-22", time: "2:00 PM - 4:30 PM", spots: 4 },
+        { date: "2024-12-22", time: "5:00 PM - 7:30 PM", spots: 6 },
+        { date: "2024-12-29", time: "11:00 AM - 1:30 PM", spots: 3 },
+        { date: "2024-12-29", time: "2:00 PM - 4:30 PM", spots: 5 },
+      ]
     },
     {
-      id: "kids-pottery-camp",
-      title: "Kids Pottery Camp",
-      level: "Ages 8-14",
-      duration: "1 week",
-      schedule: "Daily, 10:00 AM - 12:00 PM",
-      startDate: "June 5, 2025",
-      price: "₹5,500",
-      capacity: "10 students",
-      rating: 4.8,
-      reviews: 32,
-      description: "A fun, creative week introducing children to pottery. Kids will learn basic techniques, create playful pieces, and develop fine motor skills. Each day includes hands-on making, games, and creative exploration.",
-      includes: ["All materials", "Snacks provided", "Supervised activities", "Certificate"],
-      instructor: "Priya Sharma",
-      location: "Kids Studio",
+      id: "ceramic-painting-workshop",
+      title: "Ceramic Painting Workshop",
+      level: "All Levels",
+      duration: "2-3 hours",
+      schedule: "Flexible timings",
+      startDate: "Contact for availability",
+      price: "₹1,150 (Single) / ₹2,100 (Couple)",
+      capacity: "Walk-in friendly",
+      rating: 4.6,
+      reviews: 28,
+      description: "Turn plain ceramics into stunning works of art! Paint your own ceramic pieces with studio-grade underglazes. Perfect for families, friends, or solo creative time.",
+      includes: ["Studio-grade underglazes", "Brushes & materials", "Table space & guidance", "Firing services"],
+      instructor: "Svahastha Team",
+      location: "Svahastha Pottery Studio",
       featured: false,
+      availableDates: [
+        { date: "2024-12-23", time: "11:00 AM - 2:00 PM", spots: 8 },
+        { date: "2024-12-30", time: "11:00 AM - 2:00 PM", spots: 6 },
+        { date: "2025-01-06", time: "11:00 AM - 2:00 PM", spots: 10 },
+      ]
+    },
+    {
+      id: "glow-in-the-dark-pottery",
+      title: "Glow-in-the-Dark Pottery Workshop",
+      level: "All Levels",
+      duration: "3 hours",
+      schedule: "Contact for schedule",
+      startDate: "Contact for availability",
+      price: "Contact for pricing",
+      capacity: "Limited seats",
+      rating: 4.8,
+      reviews: 15,
+      description: "Create pottery that shines in the dark! This unique workshop blends creativity with magic, allowing you to craft shapes that illuminate. A one-of-a-kind experience filled with awe.",
+      includes: ["All materials provided", "Glow-in-the-dark clay", "Creative guidance", "Unique experience"],
+      instructor: "Svahastha Team",
+      location: "Svahastha Pottery Studio",
+      featured: false,
+      availableDates: [
+        { date: "2025-01-20", time: "10:00 AM - 1:00 PM", spots: 4 },
+        { date: "2025-01-27", time: "10:00 AM - 1:00 PM", spots: 6 },
+      ]
     },
   ];
 
@@ -167,121 +198,155 @@ const Workshops = () => {
       </section>
 
       {/* Workshops List */}
-      <section className="section-padding pottery-texture">
+      <section className="section-padding bg-gradient-to-b from-background to-accent/5">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-semibold mb-4">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <Star className="h-4 w-4" />
+              <span>Featured Workshops</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
               Upcoming Workshops
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Choose the workshop that speaks to your creative journey
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Choose the workshop that speaks to your creative journey. Each experience is designed to help you discover the joy of working with clay.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {workshops.map((workshop, index) => (
-              <Card key={index} className="animate-fade-in hover:shadow-xl transition-all group overflow-hidden" style={{ animationDelay: `${index * 0.05}s` }}>
+              <Card key={index} className="animate-fade-in hover:shadow-2xl transition-all duration-500 group overflow-hidden relative bg-gradient-to-br from-background to-accent/20 border-0 shadow-lg" style={{ animationDelay: `${index * 0.05}s` }}>
                 {/* Featured Badge */}
                 {workshop.featured && (
-                  <div className="absolute top-4 right-4 z-10">
-                    <Badge className="bg-primary text-primary-foreground shadow-lg">
+                  <div className="absolute top-4 right-4 z-20">
+                    <Badge className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-lg border-0">
                       <Star className="h-3 w-3 mr-1" />
                       Featured
                     </Badge>
                   </div>
                 )}
 
-                <CardHeader className="pb-4">
-                  <div className="flex justify-between items-start mb-3">
-                    <div className="flex items-center space-x-2">
-                      <Badge className={getLevelColor(workshop.level)}>
-                        {workshop.level}
-                      </Badge>
+                {/* Workshop Image/Visual Header */}
+                <div className="relative h-48 bg-gradient-to-br from-primary/10 via-primary/5 to-accent/20 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
+                      <div className="text-4xl font-heading text-primary/60">🏺</div>
+                    </div>
+                  </div>
+                  
+                  {/* Floating Elements */}
+                  <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-primary/20 animate-pulse" />
+                  <div className="absolute bottom-4 right-4 w-6 h-6 rounded-full bg-accent/30 animate-pulse" style={{ animationDelay: '1s' }} />
+                </div>
+
+                <CardHeader className="pb-4 relative">
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex items-center space-x-3">
+                      <Badge className={`${getLevelColor(workshop.level)} border-0 shadow-sm`}>
+                      {workshop.level}
+                    </Badge>
                       {workshop.rating && (
-                        <div className="flex items-center space-x-1 text-sm text-muted-foreground">
-                          <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                          <span className="font-medium">{workshop.rating}</span>
-                          <span>({workshop.reviews})</span>
+                        <div className="flex items-center space-x-1 text-sm">
+                          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                          <span className="font-semibold text-foreground">{workshop.rating}</span>
+                          <span className="text-muted-foreground">({workshop.reviews})</span>
                         </div>
                       )}
                     </div>
                     <div className="text-right">
-                      <span className="text-3xl font-heading font-bold text-primary">
-                        {workshop.price}
-                      </span>
+                      <div className="text-3xl font-heading font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                      {workshop.price}
+                      </div>
                     </div>
                   </div>
                   
-                  <CardTitle className="text-2xl font-heading group-hover:text-primary transition-colors">
+                  <CardTitle className="text-2xl font-heading group-hover:text-primary transition-colors leading-tight">
                     {workshop.title}
                   </CardTitle>
                   
-                  <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                    <div className="flex items-center space-x-1">
-                      <MapPin className="h-4 w-4" />
+                  <div className="flex items-center space-x-6 text-sm text-muted-foreground">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 rounded-full bg-primary" />
                       <span>{workshop.location}</span>
                     </div>
-                    <div className="flex items-center space-x-1">
-                      <Award className="h-4 w-4" />
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 rounded-full bg-accent" />
                       <span>{workshop.instructor}</span>
                     </div>
                   </div>
                 </CardHeader>
 
                 <CardContent className="space-y-6">
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed text-base">
                     {workshop.description}
                   </p>
 
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center space-x-2 text-muted-foreground">
-                      <Clock className="h-4 w-4 text-primary flex-shrink-0" />
-                      <div>
-                        <span className="font-medium">Duration</span>
-                        <p>{workshop.duration}</p>
+                  {/* Enhanced Info Grid */}
+                  <div className="grid grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                          <Clock className="h-4 w-4 text-primary" />
+                        </div>
+                        <div>
+                          <span className="font-semibold text-sm text-foreground">Duration</span>
+                          <p className="text-sm text-muted-foreground">{workshop.duration}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                          <Calendar className="h-4 w-4 text-accent-foreground" />
+                        </div>
+                        <div>
+                          <span className="font-semibold text-sm text-foreground">Schedule</span>
+                          <p className="text-sm text-muted-foreground">{workshop.schedule}</p>
+                        </div>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-2 text-muted-foreground">
-                      <Calendar className="h-4 w-4 text-primary flex-shrink-0" />
-                      <div>
-                        <span className="font-medium">Schedule</span>
-                        <p>{workshop.schedule}</p>
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                          <Calendar className="h-4 w-4 text-primary" />
+                        </div>
+                        <div>
+                          <span className="font-semibold text-sm text-foreground">Starts</span>
+                          <p className="text-sm text-muted-foreground">{workshop.startDate}</p>
+                        </div>
                       </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                          <Users className="h-4 w-4 text-accent-foreground" />
                     </div>
-                    <div className="flex items-center space-x-2 text-muted-foreground">
-                      <Calendar className="h-4 w-4 text-primary flex-shrink-0" />
-                      <div>
-                        <span className="font-medium">Starts</span>
-                        <p>{workshop.startDate}</p>
-                      </div>
+                        <div>
+                          <span className="font-semibold text-sm text-foreground">Capacity</span>
+                          <p className="text-sm text-muted-foreground">{workshop.capacity}</p>
                     </div>
-                    <div className="flex items-center space-x-2 text-muted-foreground">
-                      <Users className="h-4 w-4 text-primary flex-shrink-0" />
-                      <div>
-                        <span className="font-medium">Capacity</span>
-                        <p>{workshop.capacity}</p>
-                      </div>
+                    </div>
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-sm font-semibold mb-3 flex items-center">
-                      <Heart className="h-4 w-4 mr-2 text-primary" />
+                  {/* Enhanced What's Included */}
+                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-6 border border-primary/10">
+                    <p className="text-sm font-semibold mb-4 flex items-center text-foreground">
+                      <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+                        <Heart className="h-3 w-3 text-primary" />
+                      </div>
                       What's Included
                     </p>
-                    <ul className="text-sm text-muted-foreground space-y-2">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {workshop.includes.map((item, i) => (
-                        <li key={i} className="flex items-center space-x-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                          <span>{item}</span>
-                        </li>
+                        <div key={i} className="flex items-center space-x-3">
+                          <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">{item}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
 
-                  <Button className="w-full" size="lg" asChild>
+                  <Button className="w-full h-12 text-base font-semibold bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to={`/workshops/${workshop.id}`}>
-                      Book This Workshop <ArrowRight className="ml-2 h-4 w-4" />
+                      Book This Workshop <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
                 </CardContent>

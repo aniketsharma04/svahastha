@@ -9,22 +9,22 @@ import galleryImage from "@/assets/gallery-pottery.jpg";
 const Home = () => {
   const workshops = [
     {
-      title: "Beginner's Pottery",
-      duration: "4 weeks",
-      description: "Learn the fundamentals of wheel throwing and hand-building techniques.",
-      date: "Starting April 15",
+      title: "Hand-Building Pottery Course",
+      duration: "4-6 sessions",
+      description: "Discover the art of hand-building - one of the oldest and most intuitive ways to create pottery.",
+      date: "Contact for availability",
     },
     {
-      title: "Mindful Clay",
-      duration: "6 weeks",
-      description: "Combine meditation and pottery for a transformative creative journey.",
-      date: "Starting May 1",
+      title: "Wheel Fun Pottery Workshop",
+      duration: "2.5 hours",
+      description: "Experience the magic of the potter's wheel! Our bestseller workshop for all levels.",
+      date: "Multiple dates available",
     },
     {
-      title: "Advanced Glazing",
-      duration: "3 weeks",
-      description: "Master the art of ceramic glazing and firing techniques.",
-      date: "Starting April 22",
+      title: "Ceramic Painting Workshop",
+      duration: "2-3 hours",
+      description: "Turn plain ceramics into stunning works of art with studio-grade underglazes.",
+      date: "Walk-in friendly",
     },
   ];
 
