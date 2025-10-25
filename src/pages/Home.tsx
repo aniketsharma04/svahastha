@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Users, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Logo from "@/components/Logo";
 import heroImage from "@/assets/hero-pottery.jpg";
 import workshopImage from "@/assets/workshop-hands.jpg";
 import galleryImage from "@/assets/gallery-pottery.jpg";
@@ -56,9 +55,6 @@ const Home = () => {
         </div>
 
         <div className="container-custom relative z-10 text-center animate-fade-in-up">
-          <div className="mb-8 flex justify-center">
-            <Logo size="xl" className="text-white" />
-          </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 text-foreground">
             Where Clay Meets Calm
           </h1>
