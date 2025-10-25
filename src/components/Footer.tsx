@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Mail, MapPin, Phone } from "lucide-react";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-heading font-semibold">Svahastha</h3>
+            <Logo size="lg" className="text-secondary-foreground" />
             <p className="text-sm text-secondary-foreground/80 leading-relaxed">
               Where clay meets calm. Discover mindfulness through the art of pottery.
             </p>
