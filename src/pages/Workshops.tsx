@@ -367,9 +367,17 @@ const Workshops = () => {
               Get in touch with us for personalized recommendations based on your 
               experience level and creative goals.
             </p>
-            <Button size="lg" variant="secondary">
-              Contact Us for Guidance
-            </Button>
+            <Button size="lg" variant="secondary" asChild>
+            <a
+              href="https://wa.me/916361580705"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Contact Us for Guidance"
+            >
+                  Contact Us for Guidance
+                </a>
+              </Button>
+
           </div>
         </div>
       </section>
